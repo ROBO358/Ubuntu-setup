@@ -21,7 +21,7 @@ git config --global user.email $2
 git config -l
 
 cp -f -b ./bin/.p10k.zsh ./bin/.zshrc $HOME
-sudo chsh -s $(which zsh) $USERNAME
+chsh -s $(which zsh)
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 mkdir font
 curl -sSL https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf -o ./font/MesloLGS_NF_Regular.ttf
