@@ -18,6 +18,8 @@ git config --global color.ui auto
 git config --global core.editor vim
 git config --global user.name $1
 git config --global user.email $2
+# WSL上で、Windows環境上のgit-credential-managerを使用する設定
+# git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe"
 git config -l
 
 cp -f -b ./bin/.p10k.zsh ./bin/.zshrc $HOME
