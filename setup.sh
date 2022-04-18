@@ -7,7 +7,7 @@ cd "dirname $0"
 echo "SETUP Starting..."
 sudo apt update
 sudo apt -y upgrade
-sudo apt -y install vim git zsh curl
+sudo apt -y install vim git zsh curl htop
 
 sudo apt -y autoremove
 sudo apt -y autoclean
