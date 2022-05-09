@@ -5,6 +5,8 @@
 cd "dirname $0"
 
 echo "SETUP Starting..."
+sudo update-locale LANG=en_US.UTF-8
+
 sudo apt update
 sudo apt -y upgrade
 sudo apt -y install vim git zsh curl htop
